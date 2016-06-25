@@ -13,68 +13,88 @@
 <body>
 <div id = "wrapper">
   <div id = "container">
-    <ul id = "comments">
-      <li class = "cmmnt">
-        <div class = "block">
-          <div class = "avatar"><a href = "javascript:void(0);"><img src = "images/avatar1.png" width = "55"
-                                                                     height = "55"
-                                                                     alt = ""/></a>
+    <div id = "comments">
+      <ul>
+        <li class = "cmmnt">
+          <div class = "block">
+            <div class = "avatar"><a href = "javascript:void(0);"><img src = "images/avatar1.png" width = "55"
+                                                                       height = "55"
+                                                                       alt = ""/></a>
+            </div>
+            <div class = "cmmnt-content bubble-light-blue">
+              <header class = "header"><a href = "javascript:void(0);" class = "userlink-blue">Alexander Smith</a> <span
+                  class = "pubdate">16 min ago</span>
+              </header>
+              <p>I noticed it yesterday only and before reading your article. I wonder if they aren't only now starting
+                to
+                roll it out completely (and maybe coded the feature back in November)</p>
+            </div>
           </div>
-          <div class = "cmmnt-content bubble-light-gray">
-            <header class = "header"><a href = "javascript:void(0);" class = "userlink-blue">Alexander Smith</a> <span
-                class = "pubdate">16 min ago</span>
-            </header>
-            <p>I noticed it yesterday only and before reading your article. I wonder if they aren't only now starting to
-              roll it out completely (and maybe coded the feature back in November)</p>
+        </li>
+        <li class = "cmmnt">
+          <div class = "block">
+            <div class = "avatar"><a href = "javascript:void(0);"><img src = "images/avatar2.png" width = "55"
+                                                                       height = "55" alt = ""/></a>
+            </div>
+            <div class = "cmmnt-content bubble-pink">
+              <header class = "header"><a href = "javascript:void(0);" class = "userlink-pink">Anna Pearson</a> <span
+                  class = "pubdate">12 min ago</span>
+              </header>
+              <p>This is important stuff. Does if have a Wikipedia entry yet?</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class = "cmmnt">
-        <div class = "block">
-          <div class = "avatar"><a href = "javascript:void(0);"><img src = "images/avatar2.png" width = "55"
-                                                                     height = "55" alt = ""/></a>
+          <div class = "block">
+            <ul class = "replies">
+              <li class = "comment-replies">
+                <div class = "cmmnt-content bubble-white">
+                  <header class = "header"><a href = "javascript:void(0);" class = "userlink-replies">James
+                    Morrison</a> <span
+                      class = "pubdate-replies">11 min ago</span>
+                  </header>
+                  <p>It's there from a long time...2+ years back, I came to know about this via littlebigdetails.com</p>
+                </div>
+                <div class = "avatar-replies"><a href = "javascript:void(0);"><img src = "images/avatar4.png"
+                                                                                   width = "55"
+                                                                                   height = "55"
+                                                                                   alt = ""/></a>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class = "cmmnt-content bubble-pink">
-            <header class = "header"><a href = "javascript:void(0);" class = "userlink-pink">Anna Pearson</a> <span
-                class = "pubdate">12 min ago</span>
-            </header>
-            <p>This is important stuff. Does if have a Wikipedia entry yet?</p>
-          </div>
-        </div>
-        <div class = "block">
-          <ul class = "replies">
-            <li class = "comment-replies">
-              <div class = "cmmnt-content bubble-white">
-                <header class = "header"><a href = "javascript:void(0);" class = "userlink-replies">James
-                  Morrison</a> <span
-                    class = "pubdate-replies">11 min ago</span>
-                </header>
-                <p>It's there from a long time...2+ years back, I came to know about this via littlebigdetails.com</p>
-              </div>
-              <div class = "avatar-replies"><a href = "javascript:void(0);"><img src = "images/avatar4.png" width = "55"
-                                                                                 height = "55"
-                                                                                 alt = ""/></a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <div class = "block" contenteditable = "true">
+        </li>
         <li class = "cmmnt">
           <div class = "block">
             <div class = "avatar"><a href = "javascript:void(0);"><img src = "images/avatar1.png" width = "55"
                                                                        height = "55"
                                                                        alt = ""/></a></div>
-            <div class = "cmmnt-content bubble-light-gray">
-              <header class = "header"><a href = "javascript:void(0);" class = "userlink-blue">Alexander Smith</a><span
+            <div class = "cmmnt-content bubble-light-blue">
+              <header class = "header"><a href = "javascript:void(0);" class = "userlink-blue">Alexander
+                Smith</a><span
                   class = "pubdate">5 min ago</span>
               </header>
-              <p>Video testimonials can be recorded from anywhere with the Modulates video recorder and then uploaded
+              <p>Video testimonials can be recorded from anywhere with the Modulates video recorder and then
+                uploaded
                 from anywhere</p>
             </div>
           </div>
         </li>
-      </div>
+      </ul>
+    </div>
+    <div class = "sep"></div>
+    <ul id = "cmmnt-box">
+      <li class = "cmmnt">
+        <div class = "block">
+          <div class = "avatar"><img src = "images/avatar4.png" width = "55"
+                                     height = "55"
+                                     alt = ""/></div>
+          <div id="button-send">
+            <div class = "button button-sm">SEND</div>
+          </div>
+          <div id = "divEditable" data-placeholder = "Say something..." contenteditable = "true"
+               class = "cmmnt-content bubble-light-gray">
+          </div>
+        </div>
+      </li>
     </ul>
   </div>
 </div>

@@ -42,7 +42,7 @@ a:hover {
 
 #container {
   display: block;
-  width: 100%;
+  width: 66rem;
   background: #fff;
   padding: 1.5rem 1.5rem;
   -webkit-border-radius: 0.4rem;
@@ -126,7 +126,7 @@ a:hover {
   padding-right: 1rem;
 }
 
-.bubble-light-gray {
+.bubble-light-blue {
   position: relative;
   background: #EAEFFB;
   padding-left: 1rem;
@@ -136,7 +136,7 @@ a:hover {
   border-radius: 0.4rem;
 }
 
-.bubble-light-gray:after {
+.bubble-light-blue:after {
   content: '';
   position: absolute;
   border-style: solid;
@@ -256,9 +256,123 @@ a:hover {
 
 /* Scrollbar */
 
-::-webkit-scrollbar{width: 2px;}
-::-webkit-scrollbar-thumb{background-color: rgb(218, 229, 234); border-radius: 0;}
-::-webkit-scrollbar-thumb:hover{background-color: rgb(218, 229, 234);}
-::-webkit-scrollbar-track{background-color: rgb(218, 229, 234);}
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7d98df;
+  border-radius: 0;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #dae5ea;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #dae5ea;
+}
 
 /* End Scrollbar */
+
+#divEditable {
+  font: -moz-field;
+  font: -webkit-small-control;
+  padding: 2rem 2rem;
+  font-size: 1.3rem;
+  color: #656565;
+}
+
+
+
+div[contenteditable=true]:not(:focus):before {
+  content: attr(data-placeholder);
+  display: block; /* For Firefox */
+  color: #C3CDD3;
+}
+
+textarea:focus, input:focus, div:focus{
+  outline: none;
+}
+
+
+.bubble-light-gray {
+  position: relative;
+  background: #F7F7F7;
+  padding-left: 1rem;
+  width: 45rem;
+  height: 10rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.bubble-light-gray:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 0.9rem 0.8rem 0.9rem 0;
+  border-color: transparent #F7F7F7;
+  display: block;
+  z-index: 1;
+  left: -0.8rem;
+  top: 1.2rem;
+}
+
+#cmmnt-box {
+  padding-left: 1rem;
+}
+.sep {
+  height: 0.1rem;
+  background: #E0E7EB;
+  width: 79rem;
+  margin: 0 -2.5rem 2rem;
+}
+
+.button-sm {
+  height: 3rem;
+  width: 7.5rem;
+  font: 1.3rem/3rem "Roboto Slab", Arial, Geneva, Verdana, sans-serif;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  background: #668AE8;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(top, #668AE8, #6d9aff);
+
+}
+
+button:hover {
+  cursor: pointer;
+  background: #6f98ff;
+  background: linear-gradient(top, #668AE8, #6d9aff);
+}
+
+a.button {
+  text-decoration: none;
+}
+
+a.button:hover {
+  background: #6f98ff;
+  background: linear-gradient(top, #668AE8, #6d9aff);
+}
+
+div.button:hover {
+  cursor: pointer;
+  background: #6f98ff;
+  background: linear-gradient(top, #668AE8, #6d9aff);
+}
+
+#button-send {
+  padding-left: 498px;
+  padding-right: 90px;
+  padding-top: 108px;
+  position: absolute;
+  text-align: right;
+  z-index: 2;
+}
