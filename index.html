@@ -6,96 +6,127 @@
       href = 'https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100'
       rel = 'stylesheet' type = 'text/css'>
   <link href = "css/main.css" rel = "stylesheet" type = "text/css">
+  <link href = "css/tabs.css" rel = "stylesheet" type = "text/css">
+  <script src = "js/jquery-1.4.min.js"></script>
+  <script src = "js/tabs.js"></script>
   <meta http-equiv = "Content-Type" content = "text/html;charset=utf-8">
   <title>Encyclopedia Profiles</title>
   <link rel = "stylesheet" type = "text/css" href = "http://fonts.googleapis.com/css?family=Wellfleet">
 </head>
 <body>
-<div id = "wrapper">
-  <div id = "container">
-    <div id = "comments">
-      <ul>
-        <li class = "cmmnt">
-          <div class = "block">
-            <div class = "avatar"><a href = "javascript:void(0);"><img src = "images/avatar1.png" width = "55"
-                                                                       height = "55"
-                                                                       alt = ""/></a>
+<div id = "tabs-main">
+  <div id = "tabs-wrapper">
+    <ul id = "tabs">
+      <!-- Tabs go here -->
+      <li class = "current">
+        <a id = "tab1" class = "tab" href = "#">Chat</a>
+        <span class = "remove"><a class = "close black" href = "#"></a></span>
+      </li>
+      <li>
+        <a id = "tab2" class = "tab" href = "#">Screen Sharing</a>
+        <span class = "remove"><a class = "close black" href = "#"></a></span>
+      </li>
+    </ul>
+    <div id = "content">
+      <!-- Tab content goes here -->
+      <section id = "tab1_content">
+        <div id = "commnt-wrapper">
+          <div id = "container">
+            <div id = "comments">
+              <ul>
+                <li class = "cmmnt">
+                  <div class = "block">
+                    <div class = "avatar"><a href = "javascript:void(0);"><img src = "images/avatar1.png" width = "55"
+                                                                               height = "55"
+                                                                               alt = ""/></a>
+                    </div>
+                    <div class = "cmmnt-content bubble-light-blue">
+                      <header class = "header"><a href = "javascript:void(0);" class = "userlink-blue">Alexander
+                        Smith</a> <span
+                          class = "pubdate">16 min ago</span>
+                      </header>
+                      <p>I noticed it yesterday only and before reading your article. I wonder if they aren't only now
+                        starting
+                        to
+                        roll it out completely (and maybe coded the feature back in November)</p>
+                    </div>
+                  </div>
+                </li>
+                <li class = "cmmnt">
+                  <div class = "block">
+                    <div class = "avatar"><a href = "javascript:void(0);"><img src = "images/avatar2.png" width = "55"
+                                                                               height = "55" alt = ""/></a>
+                    </div>
+                    <div class = "cmmnt-content bubble-pink">
+                      <header class = "header"><a href = "javascript:void(0);" class = "userlink-pink">Anna
+                        Pearson</a> <span
+                          class = "pubdate">12 min ago</span>
+                      </header>
+                      <p>This is important stuff. Does if have a Wikipedia entry yet?</p>
+                    </div>
+                  </div>
+                  <div class = "block">
+                    <ul class = "replies">
+                      <li class = "comment-replies">
+                        <div class = "cmmnt-content bubble-white">
+                          <header class = "header"><a href = "javascript:void(0);" class = "userlink-replies">James
+                            Morrison</a> <span
+                              class = "pubdate-replies">11 min ago</span>
+                          </header>
+                          <p>It's there from a long time...2+ years back, I came to know about this via
+                            littlebigdetails.com</p>
+                        </div>
+                        <div class = "avatar-replies"><a href = "javascript:void(0);"><img src = "images/avatar4.png"
+                                                                                           width = "55"
+                                                                                           height = "55"
+                                                                                           alt = ""/></a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class = "cmmnt">
+                  <div class = "block">
+                    <div class = "avatar"><a href = "javascript:void(0);"><img src = "images/avatar1.png" width = "55"
+                                                                               height = "55"
+                                                                               alt = ""/></a></div>
+                    <div class = "cmmnt-content bubble-light-blue">
+                      <header class = "header"><a href = "javascript:void(0);" class = "userlink-blue">Alexander
+                        Smith</a><span
+                          class = "pubdate">5 min ago</span>
+                      </header>
+                      <p>Video testimonials can be recorded from anywhere with the Modulates video recorder and then
+                        uploaded
+                        from anywhere</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class = "cmmnt-content bubble-light-blue">
-              <header class = "header"><a href = "javascript:void(0);" class = "userlink-blue">Alexander Smith</a> <span
-                  class = "pubdate">16 min ago</span>
-              </header>
-              <p>I noticed it yesterday only and before reading your article. I wonder if they aren't only now starting
-                to
-                roll it out completely (and maybe coded the feature back in November)</p>
-            </div>
-          </div>
-        </li>
-        <li class = "cmmnt">
-          <div class = "block">
-            <div class = "avatar"><a href = "javascript:void(0);"><img src = "images/avatar2.png" width = "55"
-                                                                       height = "55" alt = ""/></a>
-            </div>
-            <div class = "cmmnt-content bubble-pink">
-              <header class = "header"><a href = "javascript:void(0);" class = "userlink-pink">Anna Pearson</a> <span
-                  class = "pubdate">12 min ago</span>
-              </header>
-              <p>This is important stuff. Does if have a Wikipedia entry yet?</p>
-            </div>
-          </div>
-          <div class = "block">
-            <ul class = "replies">
-              <li class = "comment-replies">
-                <div class = "cmmnt-content bubble-white">
-                  <header class = "header"><a href = "javascript:void(0);" class = "userlink-replies">James
-                    Morrison</a> <span
-                      class = "pubdate-replies">11 min ago</span>
-                  </header>
-                  <p>It's there from a long time...2+ years back, I came to know about this via littlebigdetails.com</p>
-                </div>
-                <div class = "avatar-replies"><a href = "javascript:void(0);"><img src = "images/avatar4.png"
-                                                                                   width = "55"
-                                                                                   height = "55"
-                                                                                   alt = ""/></a>
+            <div class = "sep"></div>
+            <ul id = "cmmnt-box">
+              <li class = "cmmnt">
+                <div class = "block">
+                  <div class = "avatar"><img src = "images/avatar4.png" width = "55"
+                                             height = "55"
+                                             alt = ""/></div>
+                  <div id = "button-send">
+                    <div class = "button button-sm">SEND</div>
+                  </div>
+                  <div id = "divEditable" data-placeholder = "Say something..." contenteditable = "true"
+                       class = "cmmnt-content bubble-light-gray">
+                  </div>
                 </div>
               </li>
             </ul>
           </div>
-        </li>
-        <li class = "cmmnt">
-          <div class = "block">
-            <div class = "avatar"><a href = "javascript:void(0);"><img src = "images/avatar1.png" width = "55"
-                                                                       height = "55"
-                                                                       alt = ""/></a></div>
-            <div class = "cmmnt-content bubble-light-blue">
-              <header class = "header"><a href = "javascript:void(0);" class = "userlink-blue">Alexander
-                Smith</a><span
-                  class = "pubdate">5 min ago</span>
-              </header>
-              <p>Video testimonials can be recorded from anywhere with the Modulates video recorder and then
-                uploaded
-                from anywhere</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class = "sep"></div>
-    <ul id = "cmmnt-box">
-      <li class = "cmmnt">
-        <div class = "block">
-          <div class = "avatar"><img src = "images/avatar4.png" width = "55"
-                                     height = "55"
-                                     alt = ""/></div>
-          <div id="button-send">
-            <div class = "button button-sm">SEND</div>
-          </div>
-          <div id = "divEditable" data-placeholder = "Say something..." contenteditable = "true"
-               class = "cmmnt-content bubble-light-gray">
-          </div>
         </div>
-      </li>
-    </ul>
+      </section>
+      <section id = "tab2_content">Screen Sharing</section>
+      <!--
+      <p id="tab1_content">Content 1</p>
+      <p id="tab2_content" style="display: none"></p>-->
+    </div>
   </div>
 </div>
 
