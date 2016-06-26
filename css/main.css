@@ -1,5 +1,13 @@
 @import url('reset.css');
 
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -42,7 +50,7 @@ a:hover {
 
 #container {
   display: block;
-  width: 66rem;
+  width: 68rem;
   background: #fff;
   padding: 1.5rem 1.5rem;
   -webkit-border-radius: 0.4rem;
@@ -278,7 +286,6 @@ a:hover {
 
 #divEditable {
   font: -moz-field;
-  font: -webkit-small-control;
   padding: 2rem 2rem;
   font-size: 1.3rem;
   color: #656565;
@@ -369,10 +376,8 @@ div.button:hover {
 }
 
 #button-send {
-  padding-left: 498px;
-  padding-right: 90px;
-  padding-top: 108px;
+  padding-left: 45.6rem;
+  padding-top: 7rem;
   position: absolute;
   text-align: right;
-  z-index: 2;
 }
