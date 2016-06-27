@@ -22,7 +22,7 @@
   padding-bottom: 1.4rem;
   padding-left: 2rem;
   display: inline-block;
-  width: 180px;
+  width: 17rem;
   text-align: center;
 }
 
@@ -45,7 +45,7 @@
 }
 
 #tabs li span.remove {
-  padding-right: 10px;
+  padding-right: 1rem;
 }
 
 #content {
@@ -54,27 +54,26 @@
 
 
 #tabs-main {
-  width: 90%;
-  margin: 0px auto;
-  overflow: hidden;
-  background-color: #F6F6F6;
+  width: 100%;
   margin-top: 20px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  padding: 30px;
+  overflow: hidden;
+  background-color: #F2F6F9;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  padding: 3rem;
 }
 
 #tabs-wrapper {
-  width: 700px;
-  margin-top: 20px;
+  width: 70rem;
+  margin-top: 2rem;
 }
 
 /** Close Button **/
 .close {
   position: relative;
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 1.4rem;
+  height: 1.4rem;
   overflow: hidden;
 }
 
@@ -111,4 +110,12 @@
 
 .close.black::before, .close.black::after {
   height: 3px;
+}
+
+#tabs li span.add-panel a {
+  position: absolute;
+  padding-left: 18rem;
+  padding-top: 1.5rem;
+  font-size: 1.6rem;
+  color: #8EABFB;
 }

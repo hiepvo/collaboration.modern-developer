@@ -1,0 +1,44 @@
+
+.row {
+  margin: 0 -0.75em;
+}
+
+.row [class*="column-"] {
+  margin: 0;
+  display: inline-block;
+  padding-left: 0.75em;
+  vertical-align: top;
+}
+
+.window {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 18.75rem;
+  border: 1px solid #cdcdcd;
+  -webkit-box-shadow: inset rgba(0,0,0,.05) 0 3px 10px;
+  box-shadow: inset rgba(0,0,0,.05) 0 3px 10px;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+}
+
+.window:hover {
+  border-color: #d3acac;
+}
+
+pre {
+  width: 100%;
+  height: 100%;
+}
+
+#html:hover + #htmlLabel {
+  opacity: 0;
+  z-index: -1;
+}
+
+

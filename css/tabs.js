@@ -2,9 +2,8 @@
  * Created by hiepvo on 6/26/16.
  */
 $(document).ready(function(){
-  $("#documents a").click(function(){
+  $("#tabs li span.add-panel a").click(function(){
     addTab($(this));
-
   });
 
   $('#tabs a.tab').live('click', function(){
@@ -42,13 +41,14 @@ $(document).ready(function(){
   });
 });
 function addTab(link){
+  alert('');
   // If tab already exist in the list, return
   if($("#" + $(link).attr("rel")).length != 0)
     return;
 
   // hide other tabs
   $("#tabs li").removeClass("current");
-  $("#content p").hide();
+  $("#content section").hide();
 
   // add new tab and related content
   $("#tabs").append("<li class='current'><a class='tab' id='" +

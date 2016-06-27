@@ -50,9 +50,9 @@ a:hover {
 
 #container {
   display: block;
-  width: 68rem;
+  width: 70rem;
   background: #fff;
-  padding: 1.5rem 1.5rem;
+  padding: 4rem 1.5rem 1.5rem 1.5rem;
 
 }
 
@@ -375,4 +375,11 @@ div.button:hover {
   padding-top: 7rem;
   position: absolute;
   text-align: right;
+}
+
+/* CODE EDITOR */
+#editor {
+  position: absolute;
+  width: 500px;
+  height: 400px;
 }
