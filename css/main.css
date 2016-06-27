@@ -378,8 +378,12 @@ div.button:hover {
 }
 
 /* CODE EDITOR */
-#editor {
+.divEditor {
+  display: inline-block;
+  padding-top: 6.4rem;
   position: absolute;
-  width: 500px;
-  height: 400px;
+}
+#editor {
+  width: 62rem;
+  height: 59.2rem;
 }

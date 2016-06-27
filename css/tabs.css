@@ -54,7 +54,7 @@
 
 
 #tabs-main {
-  width: 100%;
+  width: auto;
   margin-top: 20px;
   overflow: hidden;
   background-color: #F2F6F9;
@@ -64,7 +64,8 @@
 }
 
 #tabs-wrapper {
-  width: 70rem;
+  display: inline-block;
+  width: 68rem;
   margin-top: 2rem;
 }
 

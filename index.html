@@ -9,9 +9,7 @@
   <link href = "css/tabs.css" rel = "stylesheet" type = "text/css">
   <script src = "js/jquery-1.4.min.js"></script>
   <script src = "js/tabs.js"></script>
-
   <script src = "js/ace/src-noconflict/ace.js" type = "text/javascript" charset = "utf-8"></script>
-
   <title>Encyclopedia Profiles</title>
 </head>
 <body>
@@ -129,18 +127,9 @@
       <p id="tab2_content" style="display: none"></p>-->
     </div>
   </div>
-  <!--
-  <div style = "width: 400px" class = "windowGroup">
-    <div class = "window html">
-      <pre id = "html"></pre>
-    </div>
-  </div>-->
 
-
-</div>
-
-<div id = "editor">
-  <pre><code>&lt;!DOCTYPE html&gt;
+  <div class = "divEditor">
+    <div id = "editor"><pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;title&gt;ACE in Action&lt;/title&gt;
@@ -170,13 +159,10 @@
 &lt;/body&gt;
 &lt;/html&gt;
   </code></pre>
+    </div>
+  </div>
 </div>
 
-<script>
-  var editor = ace.edit("editor");
-  ace.config.set('basePath', 'js/ace/src-noconflict');
-  editor.setTheme("ace/theme/clouds");
-  editor.getSession().setMode("ace/mode/html");
-</script>
+<script src = "js/main.js"></script>
 </body>
 </html>
