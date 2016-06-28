@@ -4,7 +4,6 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  width: 100%;
 }
 
 #tabs li {
@@ -16,13 +15,13 @@
 
 #tabs li a.tab {
   color: #848789;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
   padding-left: 2rem;
   display: inline-block;
-  width: 17rem;
+  width: 13rem;
   text-align: center;
 }
 
@@ -30,7 +29,7 @@
   background-color: #fff;
   box-shadow: inset 0 3px 0 #668AE8;
   color: #668AE8;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 #tabs li.current .tab {
@@ -39,7 +38,8 @@
   display: inline-block;
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
-  padding-left: 2rem;  width: 180px;
+  padding-left: 2rem;
+  width: 13rem;
   text-align: center;
 
 }
@@ -53,19 +53,9 @@
 }
 
 
-#tabs-main {
-  width: auto;
-  margin-top: 20px;
-  overflow: hidden;
-  background-color: #F2F6F9;
-  -moz-border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  padding: 3rem;
-}
-
 #tabs-wrapper {
   display: inline-block;
-  width: 68rem;
+  width: 60rem;
   margin-top: 2rem;
 }
 

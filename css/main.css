@@ -18,6 +18,10 @@ body {
   padding-bottom: 6.5rem;
 }
 
+
+#content section {
+  height: 62rem;
+}
 img {
   border: 0;
   max-width: 100%;
@@ -25,7 +29,7 @@ img {
 
 p {
   font-family: "Roboto Slab", Arial, Geneva, Verdana, sans-serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.42em;
   margin-bottom: 1.2rem;
   color: #656565;
@@ -49,10 +53,9 @@ a:hover {
 }
 
 #container {
-  display: block;
-  width: 70rem;
+  width: 60rem;
   background: #fff;
-  padding: 4rem 1.5rem 1.5rem 1.5rem;
+  padding-top: 4rem;
 
 }
 
@@ -67,7 +70,8 @@ a:hover {
 .cmmnt {
   display: block;
   position: relative;
-  padding-left: 8rem;
+  padding-left: 6rem;
+  width: 56rem;
 }
 
 .avatar {
@@ -105,6 +109,7 @@ a:hover {
 
 .block {
   padding-bottom: 1.5rem;
+  width: 46rem;
 }
 
 .header {
@@ -133,7 +138,7 @@ a:hover {
   position: relative;
   background: #EAEFFB;
   padding-left: 1rem;
-  width: 45rem;
+  width: 38rem;
   -webkit-border-radius: 0.4rem;
   -moz-border-radius: 0.4rem;
   border-radius: 0.4rem;
@@ -155,7 +160,7 @@ a:hover {
   position: relative;
   background: #F8EFFB;
   padding-left: 1rem;
-  width: 45rem;
+  width: 38rem;
   -webkit-border-radius: 0.4rem;
   -moz-border-radius: 0.4rem;
   border-radius: 0.4rem;
@@ -175,7 +180,7 @@ a:hover {
 
 .bubble-white {
   position: relative;
-  width: 45rem;
+  width: 38rem;
   padding: 0;
   background: #FFFFFF;
   -webkit-border-radius: 0.4rem;
@@ -232,7 +237,7 @@ a:hover {
 .avatar-replies {
   position: absolute;
   top: 0;
-  left: 49.5rem;
+  left: 41rem;
 }
 
 .avatar-replies img {
@@ -303,7 +308,7 @@ textarea:focus, input:focus, div:focus{
   position: relative;
   background: #F7F7F7;
   padding-left: 1rem;
-  width: 45rem;
+  width: 38rem;
   height: 10rem;
   -webkit-border-radius: 0.4rem;
   -moz-border-radius: 0.4rem;
@@ -336,6 +341,15 @@ textarea:focus, input:focus, div:focus{
   height: 3rem;
   width: 7.5rem;
   font: 1.3rem/3rem "Roboto Slab", Arial, Geneva, Verdana, sans-serif;
+}
+
+#settings-wrapper {
+  width: 117rem;
+  background-color: #F2F6F9;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  padding: 1rem;
+  margin: 0 auto;
 }
 
 /* BUTTON */
@@ -371,7 +385,7 @@ div.button:hover {
 }
 
 #button-send {
-  padding-left: 45.6rem;
+  padding-left: 38.5rem;
   padding-top: 7rem;
   position: absolute;
   text-align: right;
@@ -382,8 +396,9 @@ div.button:hover {
   display: inline-block;
   padding-top: 6.4rem;
   position: absolute;
+  height: 62rem;
 }
 #editor {
-  width: 62rem;
-  height: 59.2rem;
+  width: 55rem;
+  height: 62rem;;
 }
