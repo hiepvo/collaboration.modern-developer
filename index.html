@@ -11,9 +11,8 @@
 </head>
 <body>
 <div id = "settings-wrapper">
-  <div id = "tabs-wrapper">
-    <ul id = "tabs">
-      <!-- Tabs go here -->
+  <div id = "left-panel-wrapper">
+    <ul id = "left-panel-tabs">
       <li class = "current">
         <a id = "tab1" class = "tab" href = "#">Chat</a>
         <span class = "remove"><a class = "close black" href = "#"></a></span>
@@ -22,7 +21,7 @@
         <a id = "tab2" class = "tab" href = "#">Screen Sharing</a>
         <span class = "remove"><a class = "close black" href = "#"></a></span>
       </li>
-      <li><span class = "add-panel"><a id = "addPanel" href = "#" rel = "tab" title = "test">+ add panel</a></span>
+      <li><span class = "add-panel"><a id = "addPanel" href = "#" rel = "tab">+ add panel</a></span>
       </li>
     </ul>
     <div id = "content">
@@ -124,9 +123,17 @@
       <p id="tab2_content" style="display: none"></p>-->
     </div>
   </div>
-
-  <div class = "divEditor">
-    <div id = "editor"><pre><code>&lt;!DOCTYPE html&gt;
+  <div id="right-panel-wrapper">
+    <ul id = "right-panel-tabs">
+      <li class = "current">
+        <a id = "tab-editor" class = "tab" href = "#">Code Editor</a>
+        <span class = "remove"><a class = "close black" href = "#"></a></span></li>
+      <li><span class = "right-add-panel"><a id href = "#" rel = "tab" >+ add panel</a></span>
+      </li>
+    </ul>
+    <div id = "right-content">
+      <div class = "divEditor">
+        <div id = "editor"><pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;title&gt;ACE in Action&lt;/title&gt;
@@ -156,8 +163,11 @@
 &lt;/body&gt;
 &lt;/html&gt;
   </code></pre>
+        </div>
+      </div>
     </div>
   </div>
+
 </div>
 <script src = "js/jquery-1.4.min.js"></script>
 <script src = "js/tabs.js"></script>

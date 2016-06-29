@@ -2,24 +2,23 @@
  * Created by hiepvo on 6/26/16.
  */
 $(document).ready(function(){
-  $("#documents a").click(function(){
+  $("#left-panel-tabs li span.add-panel a").click(function(){
     addTab($(this));
-
   });
 
-  $('#tabs a.tab').live('click', function(){
+  $('#left-panel-tabs a.tab').live('click', function(){
     // Get the tab name
     var contentname = $(this).attr("id") + "_content";
     // hide all other tabs
     $("#content section").hide();
-    $("#tabs li").removeClass("current");
+    $("#left-panel-tabs li").removeClass("current");
 
     // show current tab
     $("#" + contentname).show();
     $(this).parent().addClass("current");
   });
 
-  $('#tabs span.remove').live('click', function(){
+  $('#left-panel-tabs span.remove').live('click', function(){
     // Get the tab name
     var tabid = $(this).parent().find(".tab").attr("id");
     // remove tab and related content
@@ -28,10 +27,10 @@ $(document).ready(function(){
     $(this).parent().remove();
 
     // if there is no current tab and if there are still tabs left, show the first one
-    if($("#tabs li.current").length == 0 && $("#tabs li").length > 0){
+    if($("#left-panel-tabs li.current").length == 0 && $("#left-panel-tabs li").length > 0){
 
       // find the first tab
-      var firsttab = $("#tabs li:first-child");
+      var firsttab = $("#left-panel-tabs li:first-child");
       firsttab.addClass("current");
 
       // get its link name and show related content
@@ -46,11 +45,11 @@ function addTab(link){
     return;
 
   // hide other tabs
-  $("#tabs li").removeClass("current");
-  $("#content p").hide();
+  $("#left-panel-tabs li").removeClass("current");
+  $("#content section").hide();
 
   // add new tab and related content
-  $("#tabs").append("<li class='current'><a class='tab' id='" +
+  $("#left-panel-tabs").append("<li class='current'><a class='tab' id='" +
       $(link).attr("rel") + "' href='#'>" + $(link).html() +
       "</a><span class='remove'><a href='#' class='close black'></a></span></li>");
 

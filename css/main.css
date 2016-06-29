@@ -344,12 +344,13 @@ textarea:focus, input:focus, div:focus{
 }
 
 #settings-wrapper {
-  width: 117rem;
+  width: 122rem;
   background-color: #F2F6F9;
   -moz-border-radius: 1rem;
   -webkit-border-radius: 1rem;
   padding: 1rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* BUTTON */
@@ -393,12 +394,9 @@ div.button:hover {
 
 /* CODE EDITOR */
 .divEditor {
-  display: inline-block;
-  padding-top: 6.4rem;
-  position: absolute;
-  height: 62rem;
+  width: 60rem;
 }
 #editor {
-  width: 55rem;
+  width: 60rem;
   height: 62rem;;
 }
