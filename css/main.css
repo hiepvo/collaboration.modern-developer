@@ -13,7 +13,6 @@ html {
 }
 
 body {
-  background: #e3e0ef;
   font-family: "Roboto Slab", Arial, sans-serif;
   padding-bottom: 6.5rem;
 }
@@ -400,3 +399,296 @@ div.button:hover {
   width: 60rem;
   height: 62rem;;
 }
+
+/* TOP PART */
+
+/* BEGIN BANNER STYLES */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+.top-wrapper {
+  background-color: white;
+}
+
+.top-wrapper p {
+ font-family: "Roboto", sans-serif; 
+}
+
+header {
+  padding-top: 1em;
+  color: #848789;
+}
+
+.wrapper {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+header .lmd-logo  {
+  position: relative;
+  display: inline-block;
+  top: 4px;
+}
+
+.title span {
+  color: #668AE8;
+  font-weight: 600;
+  
+}
+
+.title {
+     display: inline-block;
+    font-family: "Roboto Slab", Arial, sans-serif;
+    font-size: 2em;
+    position: relative;
+    top: -10px;
+    left: 7px;
+}
+
+header p {
+  display: inline-block;
+    color: #66696b;
+    float: right;
+    position: relative;
+    top: 26px;
+    right: 18px;
+    font-size: 1.3em;
+}
+
+header .gear {
+      float: right;
+    position: relative;
+    right: -98px;
+    top: 24px;
+}
+
+
+.border {
+  width: 100%;
+  height: 1px;
+  background-color: #e0e1e1;
+  margin-top: 10px;
+}
+
+/* END BANNER STYLES */
+
+/* ROOM NAME HEADING STYLES */
+
+.room-wrapper {
+  width: 969px;
+  margin: 0 auto;
+}
+
+.room-header {
+  padding: 2.3em .7em;
+  border-bottom: 1px #e0e1e1 solid; 
+}
+
+.room-header h2 {
+  font-size: 2.4em;
+  padding-bottom: .5em;
+  color: #343637;
+  display: inline-block;
+  padding-left: .7em;
+}
+
+.room-header .fa {
+  padding-left: 10px;
+  color: #c8cacb;
+  font-size: 1.4em;
+}
+
+.room-header p {
+  color: #848789;
+  font-size: 1.3em;
+  font-weight: 300;
+  padding-left: 1.3em;
+}
+
+/* END OF ROOM HEADER STYLES */
+
+/* ROLES SECTION STYLES */
+
+.room-roles {
+  padding-top: 3.1em;
+  width: 484px;
+  display: inline-block;
+}
+
+.room-roles h2 {
+  color: #343637;
+  font-weight: 400;
+  font-size: 2em;
+  display: inline;
+  padding-left: 1em;
+}
+
+.add-link {
+  display: inline;
+  float: right;
+  font-size: 1.2em;
+  color: #668AE8;
+  position: relative;
+  top: 5px;
+}
+
+.room-roles .lorem {
+  font-size: 1.1em;
+  color: #c3c5c6;
+  padding-top: .4em;
+  padding-bottom: 1.2em;
+  padding-left: 1.8em;
+}
+
+.room-roles .list {
+  border-top: 1px #e0e1e1 solid;
+  padding-top: 1em;
+}
+
+.list li {
+  padding: 1em 1em;
+  border-radius: 1px;
+}
+
+.list p {
+  display: inline;
+  color: #57595b;
+  font-size: 1.4em;
+}
+
+
+.list .fa {
+  float: right;
+  padding-left: 6px;
+}
+
+.list span {
+  font-size: .8em;
+  color: #808385;
+  font-style: italic;
+  font-weight: bold;
+  position: relative;
+  top: 3px;
+  font-size: 1.2em;
+  float: right;
+}
+
+.list .fa {
+  color: #c8cacb;
+  font-size: 1em;
+  position: relative;
+  top: 2px;
+}
+
+.list li:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+/* END OF ROLES SECTION STYLES */
+
+/* COLORS SECTION STYLES */
+
+.room-colors {
+  padding-top: 3.1em;
+  padding-left: 100px;
+  width: 484px;
+  float: right;
+}
+
+.room-colors h2 {
+  color: #343637;
+  font-weight: 400;
+  font-size: 2em;
+  display: inline;
+  padding-left: .4em;
+}
+
+.room-colors .add-link span {
+  color: #c3c5c6;
+}
+
+.room-colors .lorem {
+  font-size: 1.2em;
+  color: #c3c5c6;
+  padding-top: .4em;
+  padding-bottom: 1.2em;
+}
+
+.room-colors .color-list {
+  border-top: 1px #e0e1e1 solid;
+  padding-top: 1.3em;
+}
+
+.color-list li {
+  padding-bottom: 1.5em;
+}
+
+.color-list .setting {
+  color: #57595b;
+  font-size: 1.25em;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.color-list .description {
+  color: #c3c5c6;
+  font-size: 1.1em;
+}
+
+.color-box {
+    display: inline-block;
+    padding: .5em .9em;
+    background-color: #f5f5f5;
+    font-size: .7em;
+    float: right;
+}
+
+.color-box .circle {
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    display: inline-block;
+    border-radius: 100%;
+    position: relative;
+    top: 1px;
+    left: -3px;
+}
+
+.color-box .circle.pink {
+  background-color: #F561B9;
+}
+
+.color-box .hexadecimal.pink {
+  color: #F561B9;
+}
+
+.color-box .circle.blue {
+  background-color: #668AE8;
+}
+
+.color-box .hexadecimal.blue {
+  color: #668AE8;
+}
+
+.color-box .circle.grey {
+  background-color: #6b6e70;
+}
+
+.color-box .hexadecimal.grey {
+  color: #6b6e70;
+}
+
+.color-box .fa {
+    color: #c8cacb;
+    position: relative;
+    right: -4px;
+    top: -1px;
+}
+
+/* END OF COLOR SECTION STYLES */
+
+
+/* END OF TOP PART */
