@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: "Roboto Slab", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   padding-bottom: 6.5rem;
 }
 
@@ -37,6 +37,7 @@ p {
 
 a {
   text-decoration: none;
+  font-family: "Roboto Slab", sans-serif;
 }
 
 a:hover {
@@ -291,7 +292,6 @@ a:hover {
 }
 
 
-
 div[contenteditable=true]:not(:focus):before {
   content: attr(data-placeholder);
   display: block; /* For Firefox */
@@ -345,8 +345,6 @@ textarea:focus, input:focus, div:focus{
 #settings-wrapper {
   width: 122rem;
   background-color: #F2F6F9;
-  -moz-border-radius: 1rem;
-  -webkit-border-radius: 1rem;
   padding: 1rem;
   margin: 0 auto;
   overflow: hidden;
@@ -400,14 +398,18 @@ div.button:hover {
   height: 62rem;;
 }
 
+.close-settings {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.close-settings a {
+  font-size: 1.4rem;
+  color: #c7cfd6;
+}
 /* TOP PART */
 
 /* BEGIN BANNER STYLES */
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-
 
 .top-wrapper {
   background-color: white;
