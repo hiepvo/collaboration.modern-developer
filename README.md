@@ -8,4 +8,4 @@ This is a group project assignment from learn.modern-developer. In this project 
 
 Jason Rivera
 
-Heip Vo
+Hiep Vo
